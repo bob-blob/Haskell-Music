@@ -1,0 +1,15 @@
+cabal: Entering directory '/tmp/cabal-tmp-15194/base64-bytestring-1.0.0.2'
+Configuring base64-bytestring-1.0.0.2...
+Building base64-bytestring-1.0.0.2...
+Preprocessing library base64-bytestring-1.0.0.2...
+[1 of 5] Compiling Data.ByteString.Base64.Internal ( Data/ByteString/Base64/Internal.hs, dist/dist-sandbox-5ccdfda5/build/Data/ByteString/Base64/Internal.o )
+[2 of 5] Compiling Data.ByteString.Base64.URL ( Data/ByteString/Base64/URL.hs, dist/dist-sandbox-5ccdfda5/build/Data/ByteString/Base64/URL.o )
+[3 of 5] Compiling Data.ByteString.Base64.URL.Lazy ( Data/ByteString/Base64/URL/Lazy.hs, dist/dist-sandbox-5ccdfda5/build/Data/ByteString/Base64/URL/Lazy.o )
+[4 of 5] Compiling Data.ByteString.Base64 ( Data/ByteString/Base64.hs, dist/dist-sandbox-5ccdfda5/build/Data/ByteString/Base64.o )
+[5 of 5] Compiling Data.ByteString.Base64.Lazy ( Data/ByteString/Base64/Lazy.hs, dist/dist-sandbox-5ccdfda5/build/Data/ByteString/Base64/Lazy.o )
+Creating package registration file:
+/tmp/pkgConf-base64-bytestring-1.0.01330573317603570492.2
+Installing library in
+/home/borisqa/Documents/Study/2019-Retakes/MusicComposer/.cabal-sandbox/lib/x86_64-linux-ghc-8.0.2/base64-bytestring-1.0.0.2-7ZVQJj0T3T1BWjXF1keCB4
+Registering base64-bytestring-1.0.0.2...
+cabal: Leaving directory '/tmp/cabal-tmp-15194/base64-bytestring-1.0.0.2'

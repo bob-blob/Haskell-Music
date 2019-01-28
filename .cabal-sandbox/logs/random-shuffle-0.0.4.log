@@ -1,0 +1,15 @@
+cabal: Entering directory '/tmp/cabal-tmp-15195/random-shuffle-0.0.4'
+Configuring random-shuffle-0.0.4...
+Building random-shuffle-0.0.4...
+Preprocessing library random-shuffle-0.0.4...
+[1 of 1] Compiling System.Random.Shuffle ( src/System/Random/Shuffle.hs, dist/dist-sandbox-5ccdfda5/build/System/Random/Shuffle.o )
+
+src/System/Random/Shuffle.hs:59:1: warning: [-Wtabs]
+    Tab character found here, and in 10 further locations.
+    Please use spaces instead.
+Creating package registration file:
+/tmp/pkgConf-random-shuffle-0.013442476861795519125.4
+Installing library in
+/home/borisqa/Documents/Study/2019-Retakes/MusicComposer/.cabal-sandbox/lib/x86_64-linux-ghc-8.0.2/random-shuffle-0.0.4-KefO8HNhq1R4I4vj6832wH
+Registering random-shuffle-0.0.4...
+cabal: Leaving directory '/tmp/cabal-tmp-15195/random-shuffle-0.0.4'
