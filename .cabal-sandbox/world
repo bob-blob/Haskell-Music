@@ -1,6 +1,0 @@
-sdl2-mixer -any
-SDL-mixer ==0.6.3.0
-ALUT ==2.4.0.2
-codeworld-api ==0.2.5
-SDL ==0.6.7.0
-gloss ==1.13.*
