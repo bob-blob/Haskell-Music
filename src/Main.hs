@@ -11,5 +11,6 @@ main = do
   initSDLMixer
   --playVoice 72 planetTelex
   --playMusic 120 multiTest
-  playMusic 70 imagineLennon
+  --playMusic 70 imagineLennon
+  playVoice 120 testConnect
   closeSDLMixer

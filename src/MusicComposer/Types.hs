@@ -10,6 +10,10 @@ type Inversion = Int
 type Music = [Voice]
 type Voice = [MusicalObject]
 
+data RhythmObject = NoteR Duration
+                  | RestR Duration
+                  
+
 data Duration = 
     WN   -- ^ Whole note duration
   | HN   -- ^ Half note duration

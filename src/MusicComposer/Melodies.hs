@@ -4,6 +4,11 @@ import MusicComposer.Primitives
 import MusicComposer.Modulation
 import MusicComposer.Types
 
+testConnect :: Voice
+testConnect = take 70 (connectWith (cycle (majScale ++ note C 5 QN ++ init (reverse majScale))) (cycle rhythm))
+
+rhythm = [NoteR QN, NoteR EN, NoteR EN, NoteR QN, NoteR QN, NoteR QN, RestR QN, NoteR QN, RestR QN]
+
 test1 :: Voice 
 test1 = concat $ take 8 (repeat (note C 4 HN))
 
@@ -71,7 +76,6 @@ imagineLennon = [piano] ++ [bass] ++ [voice]
             ++ diatonic F 3 majorScale 1 3 EN ++ note C 3 EN ++ diatonic F 3 majorScale 1 3 SN ++ note Bb 3 SN
             ++ note B 3 EN
 
-
         bass = note C 2 HNd ++ note E 2 QN 
             ++ note F 2 HNd ++ note F 2 QN
             ++ note C 2 HNd ++ note E 2 QN
@@ -83,3 +87,4 @@ imagineLennon = [piano] ++ [bass] ++ [voice]
         voice = rest WN ++ rest WN ++ rest WN ++ rest WN ++ rest QN
              ++ rest ENd ++ note G 4 SN ++ note G 4 SN ++ note G 4 QNd ++ note G 4 QN ++ note B 4 EN ++ note B 4 SN 
              ++ note A 4 EN
+

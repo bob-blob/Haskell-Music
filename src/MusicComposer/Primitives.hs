@@ -75,6 +75,20 @@ scale s l o d = scaleNotes s (take 7 (repeat (Note l o)))
     scaleNotes (f:fs) (x:xs) = SingleNote (f x) d : scaleNotes fs xs 
 
 -- | Array of interval functions that represent structure of music scales
-majorScale = [wholeUp, twoUp, twoHalfUp, threeHalfUp, fourHalfUp, fiveHalfUp, sixUp]
-minorScale = [wholeUp, oneHalfUp, twoHalfUp, threeHalfUp, fourUp, fiveUp, sixUp]
-heptatonicScale = [wholeUp, oneHalfUp, twoHalfUp, threeUp, fourHalfUp, fiveUp, sixUp]
+majorScale = [id, wholeUp, twoUp, twoHalfUp, threeHalfUp, fourHalfUp, fiveHalfUp]
+minorScale = [id, wholeUp, oneHalfUp, twoHalfUp, threeHalfUp, fourUp, fiveUp]
+heptatonicScale = [id, wholeUp, oneHalfUp, twoHalfUp, threeUp, fourHalfUp, fiveUp]
+
+
+-- | Connect rhythm with musial objects
+connectWith :: Voice -> [RhythmObject] -> Voice
+connectWith _ [] = []
+connectWith [] _ = []
+connectWith x ((RestR d):ys) = Rest d : connectWith x ys
+connectWith ((SingleNote n d):xs) ((NoteR new_d):ys) = SingleNote n new_d : connectWith xs ys
+connectWith ((NoteGroup n d):xs) ((NoteR new_d):ys) = NoteGroup n new_d : connectWith xs ys
+
+
+majScale :: Voice
+majScale = scale majorScale C 4 QN
+
